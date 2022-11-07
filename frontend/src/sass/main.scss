@@ -1,0 +1,137 @@
+@import "colors.scss";
+@import "fonts.scss";
+@import "utils.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: $primary_1;
+  font-family: $font-1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 15px;
+  width: 400px;
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 10px 1px $color_hex_1;
+  background-color: white;
+}
+.register-res {
+  margin: 8% auto;
+}
+
+
+
+.label-1 {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: calc(10px + 0.7vh);
+  color: $color_hex_7;
+}
+
+.ipt-1, .ipt-2, .ipt-3 {
+  padding: 5px;
+  padding-left: 10px;
+  height: 2rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+
+  color: $color_hex_9;
+  outline: none;
+  
+  transition: all 0.1s ease-out;
+  border: 2px solid $color_grey_1;
+  background-color: $color_grey_1;
+  background-clip: padding-box;
+}
+.ipt-1:hover {
+  border-color: $color_grey_2;
+  background-color: $color_grey_1;
+}
+.ipt-1:focus, 
+.ipt-1:not(:placeholder-shown),
+.ipt-1:-webkit-autofill {
+  background-color: white;
+  border-color: $color_hex_1;
+}
+
+.ipt-2 {
+  border-color: red !important;
+  background-color: white;
+}
+
+.ipts-1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.ipts-1 > * {
+  width: 25%;
+  min-width: 100px;
+  flex: 1;
+}
+
+.btn-1 {
+  background-color: $color_hex_1;
+  border-radius: 4px;
+  height: calc(2rem);
+  color: white;
+  cursor: not-allowed;
+}
+
+
+.pass-wrap {
+  position: absolute;
+  right: 0px;
+  top: 23px;
+  width: 40px;
+  height: 30px;
+}
+
+.pass-img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.invalid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 5px;
+
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+
+  font-size: calc(10px + 0.6vh);
+  font-weight: bold;
+
+  border: 2px solid #e91916;
+  background-color: $color_grey_1;
+}
+
+.init-a {
+  text-decoration: none;
+  color: $color_hex_8;
+  font-weight: 500;
+}
+
+
+.block-1 {
+  border: 2px solid red;
+}
